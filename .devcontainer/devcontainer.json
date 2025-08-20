@@ -1,0 +1,11 @@
+{
+  "name": "Playwright Codespaces",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "postCreateCommand": "npm init -y && npm i -D @playwright/test && npx playwright install --with-deps",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-playwright.playwright"]
+    }
+  },
+  "forwardPorts": [9323]
+}
